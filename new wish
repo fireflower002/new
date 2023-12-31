@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year!</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: black;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+
+    #earth {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+
+    #clickText {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      font-size: 20px;
+    }
+
+    #happyNewYear {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="earth">
+    <!-- Insert an image of the Earth in space -->
+    <img src="earth_in_space.jpg" alt="Earth in Space">
+  </div>
+
+  <div id="clickText">
+    <p>Click the world</p>
+  </div>
+
+  <div id="happyNewYear">
+    <p>Happy New Year!</p>
+    <!-- Insert an image of the solar system background -->
+    <img src="solar_system.jpg" alt="Solar System">
+  </div>
+
+  <script>
+    // JavaScript to handle the click event and show the "Happy New Year" message
+    document.getElementById('earth').addEventListener('click', function() {
+      document.getElementById('clickText').style.display = 'none';
+      document.getElementById('happyNewYear').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
